@@ -27,8 +27,9 @@
 <meta property="og:description" content="簡述因為想要用來放一些公開的筆記，因此找了很多方案，最終決定使用省錢的HEXO搭配github pages，並把建置過程記錄下來。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-16T02:32:01.000Z">
-<meta property="article:modified_time" content="2023-01-16T09:47:05.208Z">
+<meta property="article:modified_time" content="2023-01-16T10:09:15.978Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo hexo-next-theme">
 <meta name="twitter:card" content="summary">
 
 
@@ -154,6 +155,10 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
   </nav>
 </div>
   <div class="links-of-author animated">
@@ -216,7 +221,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-01-16 10:32:01 / Modified: 17:47:05" itemprop="dateCreated datePublished" datetime="2023-01-16T10:32:01+08:00">2023-01-16</time>
+      <time title="Created: 2023-01-16 10:32:01 / Modified: 18:09:15" itemprop="dateCreated datePublished" datetime="2023-01-16T10:32:01+08:00">2023-01-16</time>
     </span>
 
   
@@ -259,7 +264,7 @@
 <p>修改<code>檔案\_config.yml</code><br> <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">search.json</span></span><br><span class="line">    <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">    <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 </li>
-<li>產生查詢快取json <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 啟動伺服器，用來看結果</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清除舊專案並發布</span></span><br><span class="line">hexo clean </span><br><span class="line">hexo generate           <span class="comment">#產生靜態網頁跟全文查詢快取json</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
+<li>產生查詢快取json <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 啟動伺服器，用來看結果</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清除舊專案並發布</span></span><br><span class="line">hexo clean              <span class="comment"># 有安裝新的package或大改動才清理舊專案</span></span><br><span class="line">hexo generate           <span class="comment"># 產生靜態網頁跟全文查詢快取json</span></span><br><span class="line">hexo deploy             <span class="comment"># 設定完成就能下此指令發布</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h1 id="三、發佈"><a href="#三、發佈" class="headerlink" title="三、發佈"></a>三、發佈</h1><h2 id="儲存程式碼"><a href="#儲存程式碼" class="headerlink" title="儲存程式碼"></a>儲存程式碼</h2><p>在github上<code>建立兩個儲存庫</code></p>
 <ol>
@@ -289,6 +294,9 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo-hexo-next-theme/" rel="tag"># hexo hexo-next-theme</a>
+          </div>
 
         
 
